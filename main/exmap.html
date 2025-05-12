@@ -2,8 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>glass의 Kakao 지도 마커 생성</title>
-</head>
+	<title></title>
 <body>
        <div id="map" style="width:600px;height:600px;"></div>
 <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=18b3fb379d9a4e523f45861623d0dee1"></script>
@@ -11,7 +10,7 @@
     var container = document.getElementById('map'); // 지도를 표시할 div 
 
     var options = {
-        center: new kakao.maps.LatLng(37.514167, 126.942917), // 지도의 중심좌표> 방학역 
+        center: new kakao.maps.LatLng(36.40078080095058, 127.40875979127121 ), // 지
         level: 5   // 지도의 확대 레벨
     };
 
@@ -19,7 +18,7 @@
 
     //****************마커***********************//
     // 마커가 표시될 위치
-    var markerPosition  = new kakao.maps.LatLng(37.514167, 126.942917);  // 사무실 근처 노량진역 
+    var markerPosition  = new kakao.maps.LatLng(36.40078080095058, 127.40875979127121 );  // 
 
     // 마커를 생성
     var marker = new kakao.maps.Marker({
@@ -33,7 +32,7 @@
     marker.setMap(map); // 마커가 지도위에 표시되도록 셋
 
     // 마커를 클릭했을 때 마커 위에 표시할 인포윈도우를 생성
-    var iwContent = '<div style="padding:5px;">안녕 난 glass <p> 봉삼아아프지마<p> 노량진역이다</div>', 
+    var iwContent = '<div style="padding:5px;"></div>', 
         // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능
     iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시
     // 인포윈도우를 생성
